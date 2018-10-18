@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<title>WEB1 - html</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h2> 영화예매 프로그램 </h2>
+<h3> code </h3><dr>
+<P>
+  import java.util.Scanner;
+
+  class Data{<br>
+    Data(){<br>
+      for(int i=0;i& lsaquo;Data.seat.length;i++) {<br>
+        for(int j=0;j& lsaquo;Data.seat[i].length;j++)<br>
+        Data.seat[i][j]=" ■ ";<br>
+      } }<br>
+<br>
+      static String seat[][]=new String [5][5];<br>
+    }<br>
+<br>
+<br>
+    class View{<br>
+      Scanner input=new Scanner(System.in);<br>
+<br>
+	int mainView() {<br>
+		System.out.println("----------------");<br>
+		System.out.println("King영화관입니다.");<br>
+		System.out.println("1번을 누르면 회원 예매");<br>
+		System.out.println("2번을 누르면 비회원 예매");<br>
+		System.out.println("3번을 누르면 예매내역 확인");<br>
+		System.out.println("4번을 누르면 예매 취소");<br>
+		System.out.println("----------------");<br>
+		return input.nextInt();<br>
+	}<br>
+<br>
+	void choiceError() {<br>
+		System.out.println("잘못누르셨습니다 다시입력해주세요!");<br>
+	}<br>
+<br>
+	void seatView() {<br>
+		for(int i=0;i& lsaquo;Data.seat.length;i++) {<br>
+			System.out.printf("\n");<br>
+			for(int j=0;j& lsaquo;Data.seat[i].length;j++)<br>
+				System.out.printf(Data.seat[i][j]);<br>
+	}}<br>
+<br>
+	void reservationView() {<br>
+		seatView();<br>
+		System.out.println(" \n ■ 자리 중 원하는 자리를 고르세요.");<br>
+		System.out.println(" 행과 열로 입력하세요 ");<br>
+	}<br>
+}<br>
+<br>
+<br>
+<br>
+<br>
+public class Main {<br>
+	public static void main(String args[]) {<br>
+<br>
+<br>
+		int choice;<br>
+		View see=new View(); Data guest=new Data();<br>
+		Scanner input=new Scanner(System.in);<br>
+<br>
+		while(true) {<br>
+			choice= see.mainView();<br>
+			if(choice>4||choice& lsaquo;1) {see.choiceError(); continue;}<br>
+			see.reservationView();<br>
+			input.nextLine();<br>
+		}<br>
+	}<br>
+}<br>
+</p>
+
+</body>
+
+</html>
