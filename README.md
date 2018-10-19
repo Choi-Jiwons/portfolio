@@ -1,8 +1,7 @@
-<!doctype html>
+
 <html>
 <head>
 <title>WEB1 - html</title>
-<meta charset="utf-8">
 </head>
 <body>
 <h1>  God & King Proje</h1>
