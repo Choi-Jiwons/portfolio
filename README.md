@@ -8,7 +8,6 @@
       color:black;
       text-decoration: none;
     }
-
     h1{
       font-size: 45px;
       text-align: center;
@@ -33,10 +32,6 @@
     #main{
       padding-left: 20px;
     }
-
-
-
-
   </style>
 </head>
 <body>
